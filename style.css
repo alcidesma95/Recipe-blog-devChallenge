@@ -14,12 +14,13 @@
 
 *{
     margin: 0;
-    padding: 0 
+    padding: 0;
     box-sizing: border-box;
     font-family: montserrat system-ui, -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
     padding: 0 10px;
+    color: #333333;
 }
 h1{
     font-family: playfair;
@@ -64,9 +65,81 @@ main img {
     width: 100%;
     gap: 10px;
 }
+
+.indicators > div > p {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12.19px;
+}
+
+.item{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
 .field-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 9.75px;
+    font-size: 8px;
     color: #BDBDBD;
 }
 .yields{
-    display: block;
+    color: #F2994A;
+    justify-items: start;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+h2{
+    font-family: playfair;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.99px;
+}
+
+h3{
+    font-family: playfair-italic;
+    font-weight: 500;
+    line-height: 21.33px;
+    font-size: 16px;
+    padding:  20px 0;
+}
+
+.ingredient-group{
+    display: flex;
+    gap: 5px;
+}
+
+.ingredient-group > p {
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.instuction-group{
+    display: flex;
+    gap: 20px;
+    padding: 30px 0;
+    height: auto;
+}
+
+.numeral{
+    background: #F2994A;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    font-family: playfair;
+    font-weight: 700;
+    min-width:40px;
+    min-height:40px;
+    max-height:40px;
+    border-radius:10%;
+  
+}
+
+.instuction-group > p {
+    font-size: 16px
 }
